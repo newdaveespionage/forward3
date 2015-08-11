@@ -11,7 +11,8 @@ h1 {
 }
 
 h2 {
-  color:#c00;
+  color:#000;
+  font-weight: lighter;
   border-bottom-color:#ccc;
 }
 
@@ -119,5 +120,47 @@ a {
   .logo{
     width:300px;
   }
+}
 
+@mixin background-cover($img_url: 'summit-bg.jpg',$opacity: 0.5,$props: no-repeat center center fixed){
+  &::after {
+    content: "";
+    background: url('../../images/#{$img_url}') $props;
+    background-size: cover;
+    opacity: $opacity;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.overview {
+  @include background-cover;
+}
+
+.hasselhoff {
+  @include background-cover('hasselhoff-computer.gif');
+}
+
+.wat-horse {
+  @include background-cover('wat-horse.jpg');
+}
+
+.questionmark {
+  @include background-cover('questionmark.gif');
+  &::after {
+    transition: all 2s linear 1s;
+  }
+  &:hover{
+    &::after{
+      opacity:1;
+    }
+  }
+}
+
+.build {
+  @include background-cover('alex_grunt_build.gif',0.25);
 }

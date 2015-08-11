@@ -245,7 +245,8 @@ h1 {
     font-size: 0.5em; }
 
 h2 {
-  color: #c00;
+  color: #000;
+  font-weight: lighter;
   border-bottom-color: #ccc; }
 
 h3 {
@@ -324,3 +325,69 @@ a:hover, a:focus {
   /* W3C */ }
   .intro .logo {
     width: 300px; }
+
+.overview::after {
+  content: "";
+  background: url("../../images/summit-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.hasselhoff::after {
+  content: "";
+  background: url("../../images/hasselhoff-computer.gif") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.wat-horse::after {
+  content: "";
+  background: url("../../images/wat-horse.jpg") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.questionmark::after {
+  content: "";
+  background: url("../../images/questionmark.gif") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.questionmark::after {
+  transition: all 2s linear 1s; }
+
+.questionmark:hover::after {
+  opacity: 1; }
+
+.build::after {
+  content: "";
+  background: url("../../images/alex_grunt_build.gif") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
