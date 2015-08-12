@@ -211,3 +211,9 @@ a {
 .raspberry-pi{
   @include background-cover('pi.jpg',0.25);
 }
+.react-es6{
+  @include background-cover('react-es6.png',1);
+}
+.butterflies{
+  @include background-cover('butterflies.mp4',1);
+}
