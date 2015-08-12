@@ -164,3 +164,30 @@ a {
 .build {
   @include background-cover('alex_grunt_build.gif',0.25);
 }
+.blinky {
+  @include background-cover('blinky.gif',1);
+}
+.bored {
+  @include background-cover('bored.gif',1);
+}
+.babel {
+  @include background-cover('babel-logo.png',1);
+}
+.babel-fade {
+  @include background-cover('babel-logo.png',0.25);
+}
+.dog-chase-tail {
+  @include background-cover('dog-chase-tail.gif',1);
+}
+.dog-vacuum {
+  @include background-cover('dog-vacuum.gif',1);
+}
+.panda-rage {
+  @include background-cover('panda-rage.gif',1);
+}
+.one-does-not {
+  @include background-cover('babel_meme.jpg',1);
+}
+.jon-why {
+  @include background-cover('jonwhy.gif',1);
+}

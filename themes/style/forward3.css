@@ -391,3 +391,111 @@ a:hover, a:focus {
   right: 0;
   position: absolute;
   z-index: -1; }
+
+.blinky::after {
+  content: "";
+  background: url("../../images/blinky.gif") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.bored::after {
+  content: "";
+  background: url("../../images/bored.gif") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.babel::after {
+  content: "";
+  background: url("../../images/babel-logo.png") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.babel-fade::after {
+  content: "";
+  background: url("../../images/babel-logo.png") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.dog-chase-tail::after {
+  content: "";
+  background: url("../../images/dog-chase-tail.gif") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.dog-vacuum::after {
+  content: "";
+  background: url("../../images/dog-vacuum.gif") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.panda-rage::after {
+  content: "";
+  background: url("../../images/panda-rage.gif") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.one-does-not::after {
+  content: "";
+  background: url("../../images/babel_meme.jpg") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.jon-why::after {
+  content: "";
+  background: url("../../images/jonwhy.gif") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
