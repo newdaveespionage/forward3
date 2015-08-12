@@ -326,6 +326,10 @@ a:hover, a:focus {
   .intro .logo {
     width: 300px; }
 
+.dark {
+  color: #FFF;
+  background-color: #000; }
+
 .overview::after {
   content: "";
   background: url("../../images/summit-bg.jpg") no-repeat center center fixed;
@@ -432,7 +436,7 @@ a:hover, a:focus {
   content: "";
   background: url("../../images/babel-logo.png") no-repeat center center fixed;
   background-size: cover;
-  opacity: 0.25;
+  opacity: 0.15;
   top: 0;
   left: 0;
   bottom: 0;
@@ -493,6 +497,66 @@ a:hover, a:focus {
   background: url("../../images/jonwhy.gif") no-repeat center center fixed;
   background-size: cover;
   opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.states-and-nomads::after {
+  content: "";
+  background: url("../../images/statesandnomads.png") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.states-and-nomads-fade::after {
+  content: "";
+  background: url("../../images/statesandnomads.png") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.hoverboard::after {
+  content: "";
+  background: url("../../images/hoverboard.gif") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.johnny-five::after {
+  content: "";
+  background: url("../../images/heres-johnny.png") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.raspberry-pi::after {
+  content: "";
+  background: url("../../images/pi.jpg") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.25;
   top: 0;
   left: 0;
   bottom: 0;

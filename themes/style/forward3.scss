@@ -122,6 +122,11 @@ a {
   }
 }
 
+.dark {
+  color:#FFF;
+  background-color: #000;
+}
+
 @mixin background-cover($img_url: 'summit-bg.jpg',$opacity: 0.5,$props: no-repeat center center fixed){
   &::after {
     content: "";
@@ -174,7 +179,7 @@ a {
   @include background-cover('babel-logo.png',1);
 }
 .babel-fade {
-  @include background-cover('babel-logo.png',0.25);
+  @include background-cover('babel-logo.png',0.15);
 }
 .dog-chase-tail {
   @include background-cover('dog-chase-tail.gif',1);
@@ -190,4 +195,19 @@ a {
 }
 .jon-why {
   @include background-cover('jonwhy.gif',1);
+}
+.states-and-nomads {
+  @include background-cover('statesandnomads.png');
+}
+.states-and-nomads-fade {
+  @include background-cover('statesandnomads.png',0.25);
+}
+.hoverboard{
+  @include background-cover('hoverboard.gif');
+}
+.johnny-five{
+  @include background-cover('heres-johnny.png',0.25);
+}
+.raspberry-pi{
+  @include background-cover('pi.jpg',0.25);
 }
