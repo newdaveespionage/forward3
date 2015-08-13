@@ -85,6 +85,10 @@ a {
   .deck-child-current {
     opacity:1;
   }
+
+  .fade-override{
+    opacity:1;
+  }
 }
 
 .deck-prev-link, .deck-next-link {
@@ -125,6 +129,9 @@ a {
 .dark {
   color:#FFF;
   background-color: #000;
+  h1,h2,h3,h4,h5,h6{
+    color:#FFF;
+  }
 }
 
 @mixin background-cover($img_url: 'summit-bg.jpg',$opacity: 0.5,$props: no-repeat center center fixed){
@@ -206,14 +213,17 @@ a {
   @include background-cover('hoverboard.gif');
 }
 .johnny-five{
-  @include background-cover('heres-johnny.png',0.25);
+  @include background-cover('short-circuit-bling.gif',0.25);
 }
 .raspberry-pi{
-  @include background-cover('pi.jpg',0.25);
+  @include background-cover('pi-built.gif',0.25);
 }
 .react-es6{
   @include background-cover('react-es6.png',1);
 }
 .butterflies{
   @include background-cover('butterflies.mp4',1);
+}
+.es6-convert{
+  @include background-cover('es6-convert.gif');
 }

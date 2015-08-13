@@ -302,6 +302,9 @@ a:hover, a:focus {
 .slide .deck-child-current {
   opacity: 1; }
 
+.slide .fade-override {
+  opacity: 1; }
+
 .deck-prev-link, .deck-next-link {
   background: #ccc;
   font-family: serif; }
@@ -329,6 +332,8 @@ a:hover, a:focus {
 .dark {
   color: #FFF;
   background-color: #000; }
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #FFF; }
 
 .overview::after {
   content: "";
@@ -542,7 +547,7 @@ a:hover, a:focus {
 
 .johnny-five::after {
   content: "";
-  background: url("../../images/heres-johnny.png") no-repeat center center fixed;
+  background: url("../../images/short-circuit-bling.gif") no-repeat center center fixed;
   background-size: cover;
   opacity: 0.25;
   top: 0;
@@ -554,7 +559,7 @@ a:hover, a:focus {
 
 .raspberry-pi::after {
   content: "";
-  background: url("../../images/pi.jpg") no-repeat center center fixed;
+  background: url("../../images/pi-built.gif") no-repeat center center fixed;
   background-size: cover;
   opacity: 0.25;
   top: 0;
@@ -581,6 +586,18 @@ a:hover, a:focus {
   background: url("../../images/butterflies.mp4") no-repeat center center fixed;
   background-size: cover;
   opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.es6-convert::after {
+  content: "";
+  background: url("../../images/es6-convert.gif") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
