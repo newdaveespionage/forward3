@@ -11,6 +11,7 @@ This module adds a (current)/(total) style status indicator to the deck.
 (function($, undefined) {
   var $document = $(document);
   var rootCounter;
+  var totalSlides = 1;
 
   var updateCurrent = function(event, from, to) {
     var options = $.deck('getOptions');
@@ -19,6 +20,7 @@ This module adds a (current)/(total) style status indicator to the deck.
       currentSlideNumber = $.deck('getSlide', to).data('rootSlide');
     }
     $(options.selectors.statusCurrent).text(currentSlideNumber);
+    $(options.selectors.statusBar).width(parseInt((currentSlideNumber/totalSlides)*$(document).width(),10));
   };
 
   var markRootSlides = function() {
@@ -69,11 +71,14 @@ This module adds a (current)/(total) style status indicator to the deck.
     var slides = $.deck('getSlides');
 
     if (options.countNested) {
+      totalSlides = slides.length;
       $(options.selectors.statusTotal).text(slides.length);
     }
     else {
+      totalSlides = rootCounter;
       $(options.selectors.statusTotal).text(rootCounter);
     }
+    $(options.selectors.statusBar).addClass('active');
   };
 
   /*
@@ -92,7 +97,8 @@ This module adds a (current)/(total) style status indicator to the deck.
   $.extend(true, $.deck.defaults, {
     selectors: {
       statusCurrent: '.deck-status-current',
-      statusTotal: '.deck-status-total'
+      statusTotal: '.deck-status-total',
+      statusBar: '.deck-status-bar'
     },
 
     countNested: true
@@ -105,4 +111,3 @@ This module adds a (current)/(total) style status indicator to the deck.
   });
   $document.bind('deck.change', updateCurrent);
 })(jQuery, 'deck');
-

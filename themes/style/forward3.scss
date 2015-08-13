@@ -134,6 +134,11 @@ a {
   }
 }
 
+.hide{
+  display:none;  
+}
+
+
 @mixin background-cover($img_url: 'summit-bg.jpg',$opacity: 0.5,$props: no-repeat center center fixed){
   &::after {
     content: "";

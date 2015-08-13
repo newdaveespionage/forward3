@@ -7,7 +7,7 @@
   <meta name="author" content="David Cox-Espenlaub" />
   <meta name="generator" content="deck.js" />
 
-  <title>Forward 3 Web Summit Debrief - David Cox-Espenlaub</title>
+  <title>Forward 3 Web Summit Debrief</title>
 
   <!-- Required stylesheet -->
   <link rel="stylesheet" media="screen" href="core/deck.core.css">
@@ -52,7 +52,7 @@
     </section>
 
     <section class="slide">
-      <h2>What? (v1)</h2>
+      <h2>What is this presentation?</h2>
       <p>Two primary categories</p>
       <ul>
         <li class="slide">Exciting things that can be used in an existing project.</li>
@@ -61,15 +61,13 @@
     </section>
 
     <section class="slide questionmark">
-      <!-- h1's have lots of properties associated, so having to wrap all the things... may need to refactor -->
       <h1>
         <img src="images/forward3-logo@2x.png"/>
-        ?
       </h1>
     </section>
 
     <section class="slide overview">
-      <h2>What? (v2)</h2>
+      <h2>What is Forward Web Technology Summit?</h2>
       <ul>
         <li class="slide">A full-day of talks and discussion about
           <ul>
@@ -338,8 +336,8 @@
       </p>
       <ul>
         <li class="slide">Inexpexnsive, self-contained, hackable computer platform (runs varieties of linux)</li>
-        <li class="slide">Can handle hardware hooked up directly to it's board via programmable pins</li>
-        <li class="slide">Many accessories for extending it's functionality</li>
+        <li class="slide">Can handle hardware hooked up directly to cpu board via programmable pins</li>
+        <li class="slide">Many accessories for extending functionality</li>
       </ul>
       <p class="slide fade-override">
         <a href="https://www.pubnub.com/">PubNub</a>
@@ -453,10 +451,13 @@
 
     <!-- deck.status snippet -->
     <p class="deck-status" aria-role="status">
-      <span class="deck-status-current"></span>
-      /
-      <span class="deck-status-total"></span>
+      <span class="deck-status-current hide"></span>
+      <span class="deck-status-total hide"></span>
+      <span class="presentation-title"></span> -
+      <span class="presentation-author"></span>
     </p>
+    <div class="deck-status-bar">
+    </div>
 
     <!-- deck.goto snippet -->
     <form action="." method="get" class="goto-form">
@@ -484,6 +485,11 @@
 <script>
   $(function() {
     $.deck('.slide');
+    var author = $('meta[name=author]').attr('content');
+    var title = $('title').text();
+    console.log("title:" + title, "author: " + author);
+    $('.presentation-title').text(title);
+    $('.presentation-author').text(author);
   });
 </script>
 </body>

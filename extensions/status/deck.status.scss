@@ -7,12 +7,24 @@
   margin:0;
 }
 
-body > .deck-container .deck-status {
+.deck-status-bar{
+  background-color: #000;
+  height:0;
+  width:0;
+  transition: 0.5s all linear;
+  &.active{
+    height: 2px;
+  }
+}
+
+body > .deck-container .deck-status,
+.deck-status-bar {
   position:fixed;
 }
 
 @media print {
-  .deck-status {
+  .deck-status,
+  .deck-status-bar {
     display:none;
   }
 }

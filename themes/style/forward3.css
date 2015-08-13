@@ -335,6 +335,9 @@ a:hover, a:focus {
   .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
     color: #FFF; }
 
+.hide {
+  display: none; }
+
 .overview::after {
   content: "";
   background: url("../../images/summit-bg.jpg") no-repeat center center fixed;
